@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RandomQuotesGenerator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hi</h1>
+ 
+    <div class="quoteBox">
+        <h1>Quote of the Day</h1>
+        <blockquote id="quote">
+            loading........
+        </blockquote>
+        <span id="author">AuthorName</span>
+        <div>
+            <button onclick= "getquote(api)">
+                NewQuote
+            </button>
+        </div>
+    </div>
+
+<script>
+    let api =  "https://api.quotable.io/random"
+    let quote = document.querySelector("#quote");
+    let author = document.querySelector("#author");
+
+
+    async function getquote (url){
+       let response = await fetch(url);
+       let data = await response.json();
+       quote.innerHTML = data.content;
+       author.innerHTML = data.author;
+     
+       }
+
+
+
+    
+</script>
 </body>
 </html>
