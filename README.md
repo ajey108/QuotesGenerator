@@ -29,10 +29,15 @@ The author of the quote is shown in the HTML element with the ID author.
 
 ## Built With
 HTML
+
 CSS
+
 JavaScript
+
 API Used
 Quotable API
+
 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
  
