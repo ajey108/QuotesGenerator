@@ -27,17 +27,17 @@ The quote text is shown in the HTML element with the ID quote.
 The author of the quote is shown in the HTML element with the ID author.
 
 
-## Built With
-HTML
+# Built With
+## HTML
 
-CSS
+## CSS
 
-JavaScript
+## JavaScript
 
-API Used
+## API Used
 Quotable API
 
-License
+# License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
  
